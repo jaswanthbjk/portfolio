@@ -1,6 +1,6 @@
 import type {NextConfig} from 'next';
 
-const repo = 'your-github-repo-name';
+const repo = 'portfolio';
 const assetPrefix = `/${repo}/`;
 const basePath = `/${repo}`;
 
