@@ -53,27 +53,29 @@ const ExperienceSection = () => (
       <AccordionItem value="item-1">
         <AccordionTrigger>
           <div className="flex flex-col sm:flex-row justify-between w-full text-left pr-4">
-            <span className="font-semibold">Senior Software Engineer, Tech Corp</span>
-            <span className="text-sm text-muted-foreground">Jan 2021 - Present</span>
+            <span className="font-semibold">Senior Deep Learning Engineer, RIIICO GmbH</span>
+            <span className="text-sm text-muted-foreground">Jan 2022 - Present</span>
           </div>
         </AccordionTrigger>
         <AccordionContent>
-          - Led the development of a new client-facing dashboard using React and Next.js, improving user engagement by 25%.<br />
-          - Architected and implemented a scalable microservices backend with Node.js and Docker, reducing server costs by 15%.<br />
-          - Mentored junior developers and conducted code reviews to maintain high code quality standards.
+          - Developed advanced semantic and instance segmentation models for LiDAR point cloud data, demonstrating proficiency in state-of-the-art computer vision techniques.<br />
+          - Engineered a custom synthetic data generation framework, significantly augmenting training datasets and improving model generalization and robustness.<br />
+          - Contributed to the setup and administration of a GPU compute cluster managed with SLURM, enabling scalable training and efficient job scheduling.<br />
+          - Managed a team of working students, providing technical mentorship and guidance, and oversaw their successful transition into full-time roles within the company.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
         <AccordionTrigger>
           <div className="flex flex-col sm:flex-row justify-between w-full text-left pr-4">
-            <span className="font-semibold">Software Developer, Innovate LLC</span>
-            <span className="text-sm text-muted-foreground">Jun 2018 - Dec 2020</span>
+            <span className="font-semibold">Senior Automotive Software Engineer, General Motors</span>
+            <span className="text-sm text-muted-foreground">Jul 2015 - Jun 2018</span>
           </div>
         </AccordionTrigger>
         <AccordionContent>
-          - Developed and maintained features for a large-scale e-commerce platform using React and Redux.<br />
-          - Collaborated with product managers and designers to translate requirements into technical solutions.<br />
-          - Improved application performance by optimizing database queries and front-end rendering.
+          - Performed verification and validation of automotive electronic software requirements, ensuring alignment with functional and system-level specifications.<br />
+          - Set up and maintained a dSPACE-based Hardware-in-the-Loop (HIL) simulation environment for automated testing; resolved plant model issues to ensure accurate system behavior.<br />
+          - Contributed to the development of features and modules for power optimization, enabling efficient climate control and cabin conditioning.<br />
+          - Collaborated across teams during both Rapid Application Development (RAD) and Detailed Design (DD) phases to ensure requirement traceability and functional completeness.
         </AccordionContent>
       </AccordionItem>
     </Accordion>
