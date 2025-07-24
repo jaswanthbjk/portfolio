@@ -30,13 +30,13 @@ const AboutSection = () => (
   <Section id="about" className="flex flex-col md:flex-row items-center gap-12">
     <div className="md:w-1/3 flex justify-center">
       <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary shadow-lg">
-        <Image src="https://placehold.co/400x400.png" alt="Jaswanth Bandlamudi" data-ai-hint="professional headshot" layout="fill" objectFit="cover" />
+        <Image src="https://placehold.co/400x400.png" alt="Jaswanth Bandlamudi" data-ai-hint="professional headshot" fill className="object-cover" />
       </div>
     </div>
     <div className="md:w-2/3 text-justify">
       <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center md:text-left">Jaswanth Bandlamudi</h1>
       <p className="text-lg text-muted-foreground mb-6 text-justify">
-        I specialize in teaching computers to understand the 3D world, similar to how self-driving cars navigate. I build systems that can identify and map objects from sensor data. My work involves preparing large, high-quality datasets to train artificial intelligence and managing powerful computer clusters to handle demanding tasks. I thrive on independent research, team collaboration, and mentoring aspiring engineers.
+        I'm a Computer Vision and Deep Learning Engineer with expertise in 3D perception, including LiDAR data processing, segmentation, and synthetic data generation. I'm experienced in building pipelines for annotated data creation and managing SLURM-based GPU clusters for scalable training. I'm skilled in independent R&D, cross-functional collaboration, and mentoring working students through their transition to full-time roles.
       </p>
       <div className="flex flex-wrap gap-2 justify-center md:justify-start">
         {['Deep Learning', 'Computer Vision', '3D Perception', 'LiDAR', 'Point Cloud Processing', 'TensorFlow', 'PyTorch', 'Keras', 'Docker', 'Google Cloud', 'SLURM', 'Python'].map(skill => (
