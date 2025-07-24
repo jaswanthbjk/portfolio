@@ -9,7 +9,7 @@ import { ProjectForm } from "@/components/project-form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Mail, User, Briefcase, FolderGit, MessageSquare, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, User, Briefcase, FolderGit, MessageSquare, Phone, GraduationCap } from 'lucide-react';
 import { ContactForm } from "@/components/contact-form";
 
 const Section = ({ id, children, className }: { id: string, children: React.ReactNode, className?: string }) => (
@@ -82,15 +82,50 @@ const ExperienceSection = () => (
   </Section>
 );
 
+const EducationSection = () => (
+    <Section id="education">
+      <SectionTitle icon={<GraduationCap />}>Education</SectionTitle>
+      <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
+        <AccordionItem value="item-1">
+          <AccordionTrigger>
+            <div className="flex flex-col sm:flex-row justify-between w-full text-left pr-4">
+              <span className="font-semibold">Master of Science in Computer Science, University of Applied Sciences Bonn-Rhein-Sieg</span>
+              <span className="text-sm text-muted-foreground">Sep 2018 - Present</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent>
+            <strong>Thesis:</strong> Benchmarking Out-of-Distribution detection methods in context of 2D object detection DFKI, Bremen<br />
+            - Benchmark proposal for evaluating out-of-distribution detection in case of 2D object detection.<br />
+            - Develop a classical OOD detection method based on classical and Uncertainty-based methods.<br />
+            - Compare the methods using various evaluation techniques.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-2">
+          <AccordionTrigger>
+            <div className="flex flex-col sm:flex-row justify-between w-full text-left pr-4">
+              <span className="font-semibold">Bachelor of Technology in Electrical and Electronics Engineering, K L University</span>
+              <span className="text-sm text-muted-foreground">Aug 2011 - May 2015</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent>
+            <strong>Thesis:</strong> Develop An All-Terrain Electric Vehicle Drive Controls<br />
+            - Develop an accelerator and regenerative braking system that can be embedded into the hydraulic braking system<br />
+            - Develop a cooling system for the Power electronic drive and charger using Peltier plates.
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </Section>
+);
+
 const ProjectsSection = () => (
-  <Section id="projects">
+  <Section id="projects" className="bg-card/50">
     <SectionTitle icon={<FolderGit />}>Projects</SectionTitle>
     <ProjectForm />
   </Section>
 );
 
 const ContactSection = () => (
-  <Section id="contact" className="bg-card/50">
+  <Section id="contact">
     <SectionTitle icon={<MessageSquare />}>Get In Touch</SectionTitle>
     <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
       <div className="space-y-6">
@@ -128,6 +163,7 @@ export default function Home() {
       <main className="flex-1">
         <AboutSection />
         <ExperienceSection />
+        <EducationSection />
         <ProjectsSection />
         <ContactSection />
       </main>
