@@ -29,11 +29,11 @@ const AboutSection = () => (
   <Section id="about" className="flex flex-col md:flex-row items-center gap-12">
     <div className="md:w-1/3 flex justify-center">
       <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary shadow-lg">
-        <Image src="https://placehold.co/400x400.png" alt="Your Name" data-ai-hint="professional headshot" layout="fill" objectFit="cover" />
+        <Image src="https://placehold.co/400x400.png" alt="Jaswanth Bandlamudi" data-ai-hint="professional headshot" layout="fill" objectFit="cover" />
       </div>
     </div>
     <div className="md:w-2/3 text-center md:text-left">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4">John Doe</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mb-4">Jaswanth Bandlamudi</h1>
       <p className="text-lg text-muted-foreground mb-6">
         Innovative Full-Stack Developer with 5+ years of experience in building and maintaining responsive web applications. Proficient in JavaScript, React, and Node.js. Passionate about creating intuitive user experiences and solving complex problems.
       </p>
@@ -96,19 +96,19 @@ const ContactSection = () => (
           I'm currently open to new opportunities. If you have a project in mind or just want to connect, feel free to reach out.
         </p>
         <div className="space-y-4">
-           <a href="mailto:john.doe@email.com" className="flex items-center gap-4 group">
+           <a href="mailto:jaswanth.bandlamudi@outlook.de" className="flex items-center gap-4 group">
             <Mail className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
-            <span className="group-hover:text-primary transition-colors">john.doe@email.com</span>
+            <span className="group-hover:text-primary transition-colors">jaswanth.bandlamudi@outlook.de</span>
           </a>
-          <a href="#" className="flex items-center gap-4 group">
+          <a href="tel:+4915226511608" className="flex items-center gap-4 group">
             <Phone className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
-            <span className="group-hover:text-primary transition-colors">+1 (234) 567-890</span>
+            <span className="group-hover:text-primary transition-colors">+49-15226511608</span>
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+          <a href="https://linkedin.com/in/jaswban" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
             <Linkedin className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
             <span className="group-hover:text-primary transition-colors">LinkedIn Profile</span>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+          <a href="https://github.com/jaswanthbjk" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
             <Github className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
             <span className="group-hover:text-primary transition-colors">GitHub Profile</span>
           </a>
