@@ -42,26 +42,35 @@ const projectSchema = z.object({
   skills: z.array(z.string()).optional(),
 });
 
-type Project = z.infer<typeof projectSchema>;
+type Project = z.infer<typeof projectSchema> & { data_ai_hint?: string };
 
 const initialProjects: Project[] = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce site with product listings, a shopping cart, and a secure checkout process. Built with Next.js and integrated with Stripe for payments.',
+    title: 'Uncertainty Estimation in 3D Object Detection',
+    description: 'Implemented Frustum-PointNet for 3D object detection using RGB images and LiDAR point clouds with TensorFlow and Keras Functional API. Quantified uncertainty using Bayesian Neural Networks, ensemble, and sub-ensemble techniques.',
     imageUrl: 'https://placehold.co/600x400.png',
-    data_ai_hint: 'online store',
-    projectUrl: '#',
-    githubUrl: '#',
-    skills: ['Next.js', 'React', 'Stripe', 'Tailwind CSS', 'Prisma'],
+    data_ai_hint: '3d object detection',
+    projectUrl: '#', // Placeholder for Report
+    githubUrl: 'https://github.com/jaswanthbjk',
+    skills: ['TensorFlow', 'Keras', '3D Object Detection', 'Bayesian Neural Networks'],
   },
   {
-    title: 'Data Visualization Dashboard',
-    description: 'An interactive dashboard for visualizing complex datasets, featuring various chart types and real-time data updates using WebSockets.',
+    title: 'Soccer-Robot Object Detection and Segmentation',
+    description: 'Designed a segmentation model based on NimbRoNet2 with ResNet-18 backbone and feature sharing for real-time performance. Implemented location-dependent convolutions; evaluated using F1-score, IoU, accuracy, and precision-recall metrics.',
     imageUrl: 'https://placehold.co/600x400.png',
-    data_ai_hint: 'charts graphs',
-    projectUrl: '#',
-    githubUrl: '#',
-    skills: ['React', 'D3.js', 'WebSocket', 'Node.js', 'Express'],
+    data_ai_hint: 'robotics computer vision',
+    projectUrl: '#', // Placeholder for Report
+    githubUrl: 'https://github.com/jaswanthbjk',
+    skills: ['PyTorch', 'ResNet-18', 'Real-time Object Detection', 'Image Segmentation'],
+  },
+  {
+    title: 'Bottle Cap Detection and Classification',
+    description: 'Created a labeled dataset using LabelMe for crown cap detection. Applied transfer learning with SSD and VGG-16 backbone for high accuracy and reduced training time. Containerized the model using Docker and deployed on Google Cloud.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    data_ai_hint: 'image classification cloud',
+    projectUrl: '#', // Placeholder for Report
+    githubUrl: 'https://github.com/jaswanthbjk',
+    skills: ['Transfer Learning', 'SSD', 'VGG-16', 'Docker', 'Google Cloud Platform'],
   },
 ];
 
@@ -147,7 +156,7 @@ export function ProjectForm() {
                 {project.skills?.map(skill => <Badge key={skill} variant="secondary">{skill}</Badge>)}
               </div>
               <div className="flex gap-4">
-                {project.projectUrl && <Link href={project.projectUrl} target="_blank" rel="noopener noreferrer"><Button variant="outline"><ExternalLink className="mr-2 h-4 w-4" />View Project</Button></Link>}
+                {project.projectUrl && <Link href={project.projectUrl} target="_blank" rel="noopener noreferrer"><Button variant="outline"><ExternalLink className="mr-2 h-4 w-4" />View Report</Button></Link>}
                 {project.githubUrl && <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer"><Button variant="ghost"><Github className="mr-2 h-4 w-4" />Source Code</Button></Link>}
               </div>
             </CardContent>
