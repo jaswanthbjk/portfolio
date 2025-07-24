@@ -33,8 +33,8 @@ const AboutSection = () => (
         <Image src="https://placehold.co/400x400.png" alt="Jaswanth Bandlamudi" data-ai-hint="professional headshot" layout="fill" objectFit="cover" />
       </div>
     </div>
-    <div className="md:w-2/3 text-center md:text-left">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4">Jaswanth Bandlamudi</h1>
+    <div className="md:w-2/3 text-justify">
+      <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center md:text-left">Jaswanth Bandlamudi</h1>
       <p className="text-lg text-muted-foreground mb-6">
         Computer Vision and Deep Learning Engineer with expertise in 3D perception, including LiDAR data processing, segmentation, and synthetic data generation. Experienced in building pipelines for annotated data creation and managing SLURM-based GPU clusters for scalable training. Skilled in independent R&D, cross-functional collaboration, and mentoring working students through their transition to full-time roles.
       </p>
@@ -58,7 +58,7 @@ const ExperienceSection = () => (
             <span className="text-sm text-muted-foreground">Jan 2022 - Present</span>
           </div>
         </AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="text-justify">
           - Developed advanced semantic and instance segmentation models for LiDAR point cloud data, demonstrating proficiency in state-of-the-art computer vision techniques.<br />
           - Engineered a custom synthetic data generation framework, significantly augmenting training datasets and improving model generalization and robustness.<br />
           - Contributed to the setup and administration of a GPU compute cluster managed with SLURM, enabling scalable training and efficient job scheduling.<br />
@@ -72,7 +72,7 @@ const ExperienceSection = () => (
             <span className="text-sm text-muted-foreground">Jul 2015 - Jun 2018</span>
           </div>
         </AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="text-justify">
           - Performed verification and validation of automotive electronic software requirements, ensuring alignment with functional and system-level specifications.<br />
           - Set up and maintained a dSPACE-based Hardware-in-the-Loop (HIL) simulation environment for automated testing; resolved plant model issues to ensure accurate system behavior.<br />
           - Contributed to the development of features and modules for power optimization, enabling efficient climate control and cabin conditioning.<br />
@@ -94,7 +94,7 @@ const EducationSection = () => (
               <span className="text-sm text-muted-foreground">Sep 2018 - Sep 2021</span>
             </div>
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="text-justify">
             <strong>Thesis:</strong> Benchmarking Out-of-Distribution detection methods in context of 2D object detection DFKI, Bremen<br />
             - Benchmark proposal for evaluating out-of-distribution detection in case of 2D object detection.<br />
             - Develop a classical OOD detection method based on classical and Uncertainty-based methods.<br />
@@ -108,7 +108,7 @@ const EducationSection = () => (
               <span className="text-sm text-muted-foreground">Aug 2011 - May 2015</span>
             </div>
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="text-justify">
             <strong>Thesis:</strong> Develop An All-Terrain Electric Vehicle Drive Controls<br />
             - Develop an accelerator and regenerative braking system that can be embedded into the hydraulic braking system<br />
             - Develop a cooling system for the Power electronic drive and charger using Peltier plates.
@@ -130,7 +130,7 @@ const ContactSection = () => (
     <SectionTitle icon={<MessageSquare />}>Get In Touch</SectionTitle>
     <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
       <div className="space-y-6">
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground text-justify">
           I'm currently open to new opportunities. If you have a project in mind or just want to connect, feel free to reach out.
         </p>
         <div className="space-y-4">

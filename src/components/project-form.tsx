@@ -151,7 +151,7 @@ export function ProjectForm() {
             </CardHeader>
             <CardContent className="p-6">
               <CardTitle className="mb-2 text-xl">{project.title}</CardTitle>
-              <p className="text-muted-foreground mb-4 text-sm">{project.description}</p>
+              <p className="text-muted-foreground mb-4 text-sm text-justify">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.skills?.map(skill => <Badge key={skill} variant="secondary">{skill}</Badge>)}
               </div>
