@@ -35,11 +35,12 @@ const AboutSection = () => (
     </div>
     <div className="md:w-2/3 text-justify">
       <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center md:text-left">Jaswanth Bandlamudi</h1>
-      <p className="text-lg text-muted-foreground mb-6">
-        Computer Vision and Deep Learning Engineer with expertise in 3D perception, including LiDAR data processing, segmentation, and synthetic data generation. Experienced in building pipelines for annotated data creation and managing SLURM-based GPU clusters for scalable training. Skilled in independent R&D, cross-functional collaboration, and mentoring working students through their transition to full-time roles.
+      <p className="text-lg text-muted-foreground mb-6 text-justify">
+        Computer Vision and Deep Learning Engineer with expertise in 3D perception, including LiDAR data processing, segmentation, and synthetic data generation. Experienced in building pipelines for annotated data creation and managing SLURM-based GPU clusters for scalable training. Skilled in independent R&D, cross-functional
+collaboration, and mentoring working students through their transition to full-time roles.
       </p>
       <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-        {['JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'Tailwind CSS', 'Firebase', 'GraphQL'].map(skill => (
+        {['Deep Learning', 'Computer Vision', '3D Perception', 'LiDAR', 'Point Cloud Processing', 'TensorFlow', 'PyTorch', 'Keras', 'Docker', 'Google Cloud', 'SLURM', 'Python'].map(skill => (
           <Badge key={skill} variant="secondary">{skill}</Badge>
         ))}
       </div>
