@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
@@ -90,7 +91,7 @@ const EducationSection = () => (
           <AccordionTrigger>
             <div className="flex flex-col sm:flex-row justify-between w-full text-left pr-4">
               <span className="font-semibold">Master of Science in Computer Science, University of Applied Sciences Bonn-Rhein-Sieg</span>
-              <span className="text-sm text-muted-foreground">Sep 2018 - Present</span>
+              <span className="text-sm text-muted-foreground">Sep 2018 - Sep 2021</span>
             </div>
           </AccordionTrigger>
           <AccordionContent>
