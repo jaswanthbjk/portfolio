@@ -35,7 +35,7 @@ const AboutSection = () => (
     <div className="md:w-2/3 text-center md:text-left">
       <h1 className="text-4xl md:text-5xl font-bold mb-4">Jaswanth Bandlamudi</h1>
       <p className="text-lg text-muted-foreground mb-6">
-        Innovative Full-Stack Developer with 5+ years of experience in building and maintaining responsive web applications. Proficient in JavaScript, React, and Node.js. Passionate about creating intuitive user experiences and solving complex problems.
+        Computer Vision and Deep Learning Engineer with expertise in 3D perception, including LiDAR data processing, segmentation, and synthetic data generation. Experienced in building pipelines for annotated data creation and managing SLURM-based GPU clusters for scalable training. Skilled in independent R&D, cross-functional collaboration, and mentoring working students through their transition to full-time roles.
       </p>
       <div className="flex flex-wrap gap-2 justify-center md:justify-start">
         {['JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'Tailwind CSS', 'Firebase', 'GraphQL'].map(skill => (
