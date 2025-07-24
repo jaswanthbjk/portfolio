@@ -47,7 +47,7 @@ type Project = z.infer<typeof projectSchema> & { data_ai_hint?: string };
 const initialProjects: Project[] = [
   {
     title: 'Uncertainty Estimation in 3D Object Detection',
-    description: 'Implemented Frustum-PointNet for 3D object detection using RGB images and LiDAR point clouds with TensorFlow and Keras Functional API. Quantified uncertainty using Bayesian Neural Networks, ensemble, and sub-ensemble techniques.',
+    description: 'Built a system that allows an AI to identify objects in 3D space from images and sensor data, and also to express when it is uncertain about what it sees. This is crucial for safe and reliable autonomous systems.',
     imageUrl: 'https://placehold.co/600x400.png',
     data_ai_hint: '3d object detection',
     projectUrl: '#', // Placeholder for Report
@@ -56,7 +56,7 @@ const initialProjects: Project[] = [
   },
   {
     title: 'Soccer-Robot Object Detection and Segmentation',
-    description: 'Designed a segmentation model based on NimbRoNet2 with ResNet-18 backbone and feature sharing for real-time performance. Implemented location-dependent convolutions; evaluated using F1-score, IoU, accuracy, and precision-recall metrics.',
+    description: 'Developed an efficient AI model for a soccer-playing robot, allowing it to quickly identify the ball, players, and field lines in real-time. This helps the robot make fast and accurate decisions during a game.',
     imageUrl: 'https://placehold.co/600x400.png',
     data_ai_hint: 'robotics computer vision',
     projectUrl: '#', // Placeholder for Report
@@ -65,7 +65,7 @@ const initialProjects: Project[] = [
   },
   {
     title: 'Bottle Cap Detection and Classification',
-    description: 'Created a labeled dataset using LabelMe for crown cap detection. Applied transfer learning with SSD and VGG-16 backbone for high accuracy and reduced training time. Containerized the model using Docker and deployed on Google Cloud.',
+    description: 'Trained an AI to automatically detect and classify bottle caps in images with high accuracy. The system was packaged for easy deployment on cloud platforms, demonstrating a practical application of machine vision.',
     imageUrl: 'https://placehold.co/600x400.png',
     data_ai_hint: 'image classification cloud',
     projectUrl: '#', // Placeholder for Report

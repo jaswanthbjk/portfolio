@@ -36,8 +36,7 @@ const AboutSection = () => (
     <div className="md:w-2/3 text-justify">
       <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center md:text-left">Jaswanth Bandlamudi</h1>
       <p className="text-lg text-muted-foreground mb-6 text-justify">
-        Computer Vision and Deep Learning Engineer with expertise in 3D perception, including LiDAR data processing, segmentation, and synthetic data generation. Experienced in building pipelines for annotated data creation and managing SLURM-based GPU clusters for scalable training. Skilled in independent R&D, cross-functional
-collaboration, and mentoring working students through their transition to full-time roles.
+        I specialize in teaching computers to understand the 3D world, similar to how self-driving cars navigate. I build systems that can identify and map objects from sensor data. My work involves preparing large, high-quality datasets to train artificial intelligence and managing powerful computer clusters to handle demanding tasks. I thrive on independent research, team collaboration, and mentoring aspiring engineers.
       </p>
       <div className="flex flex-wrap gap-2 justify-center md:justify-start">
         {['Deep Learning', 'Computer Vision', '3D Perception', 'LiDAR', 'Point Cloud Processing', 'TensorFlow', 'PyTorch', 'Keras', 'Docker', 'Google Cloud', 'SLURM', 'Python'].map(skill => (
@@ -60,10 +59,10 @@ const ExperienceSection = () => (
           </div>
         </AccordionTrigger>
         <AccordionContent className="text-justify">
-          - Developed advanced semantic and instance segmentation models for LiDAR point cloud data, demonstrating proficiency in state-of-the-art computer vision techniques.<br />
-          - Engineered a custom synthetic data generation framework, significantly augmenting training datasets and improving model generalization and robustness.<br />
-          - Contributed to the setup and administration of a GPU compute cluster managed with SLURM, enabling scalable training and efficient job scheduling.<br />
-          - Managed a team of working students, providing technical mentorship and guidance, and oversaw their successful transition into full-time roles within the company.
+          - Created AI models that can recognize and categorize objects from 3D laser scans, a key technology in robotics and autonomous systems.<br />
+          - Built a system to automatically generate new training data, helping our AI become smarter and more accurate without needing more real-world examples.<br />
+          - Helped manage the high-performance computers that run our complex AI training, making sure our team could work efficiently.<br />
+          - Mentored and trained student interns, helping them grow into full-time engineering roles within the company.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
@@ -74,10 +73,10 @@ const ExperienceSection = () => (
           </div>
         </AccordionTrigger>
         <AccordionContent className="text-justify">
-          - Performed verification and validation of automotive electronic software requirements, ensuring alignment with functional and system-level specifications.<br />
-          - Set up and maintained a dSPACE-based Hardware-in-the-Loop (HIL) simulation environment for automated testing; resolved plant model issues to ensure accurate system behavior.<br />
-          - Contributed to the development of features and modules for power optimization, enabling efficient climate control and cabin conditioning.<br />
-          - Collaborated across teams during both Rapid Application Development (RAD) and Detailed Design (DD) phases to ensure requirement traceability and functional completeness.
+          - Confirmed that the software for car electronics met all safety and functional requirements through rigorous testing.<br />
+          - Established a virtual testing lab (Hardware-in-the-Loop) to automatically test car software, which sped up development and improved reliability.<br />
+          - Designed software to make car features like air conditioning more energy-efficient.<br />
+          - Worked with various teams to ensure that all software components worked together seamlessly from initial design to the final product.
         </AccordionContent>
       </AccordionItem>
     </Accordion>
@@ -96,10 +95,10 @@ const EducationSection = () => (
             </div>
           </AccordionTrigger>
           <AccordionContent className="text-justify">
-            <strong>Thesis:</strong> Benchmarking Out-of-Distribution detection methods in context of 2D object detection DFKI, Bremen<br />
-            - Benchmark proposal for evaluating out-of-distribution detection in case of 2D object detection.<br />
-            - Develop a classical OOD detection method based on classical and Uncertainty-based methods.<br />
-            - Compare the methods using various evaluation techniques.
+            <strong>Thesis:</strong> Investigating how AI systems react to unexpected or unfamiliar images during object detection.<br />
+            - Proposed a standard way to test how well an AI can spot things it wasn't trained to recognize.<br />
+            - Developed a method to help AI systems know when they are uncertain about an object.<br />
+            - Compared different techniques to see which was most effective at handling new situations.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
@@ -110,9 +109,9 @@ const EducationSection = () => (
             </div>
           </AccordionTrigger>
           <AccordionContent className="text-justify">
-            <strong>Thesis:</strong> Develop An All-Terrain Electric Vehicle Drive Controls<br />
-            - Develop an accelerator and regenerative braking system that can be embedded into the hydraulic braking system<br />
-            - Develop a cooling system for the Power electronic drive and charger using Peltier plates.
+            <strong>Thesis:</strong> Designing the drive and control systems for an all-terrain electric vehicle.<br />
+            - Created an electronic accelerator and a regenerative braking system to recover energy.<br />
+            - Developed a specialized cooling system for the vehicle's power components and charger.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
